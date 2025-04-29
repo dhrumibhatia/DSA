@@ -17,7 +17,7 @@ Return the array ans. */
 
 function getConcatenation(nums) {
     if (nums.length === 0) return [];
-    return nums.concat(getConcatenation(nums.slice(1)));
+    return nums.concat(getConcatenation(nums.slice(0)));
 
 }
 console.log(getConcatenation([1, 2, 1])); // Output: [1, 2, 1, 1, 2, 1]
